@@ -8,7 +8,7 @@ import matplotlib.pyplot as plt
 model = load_model("../models/digit_model.keras")
 
 # Load and preprocess custom test image
-img_path = "C:\\Users\\Manjunath R Gowda\\Desktop\\Handwritten_Recognition_Project\\samples\\two.jpg"  # Replace with your image path
+img_path = "..\samples\two.jpg"  # Replace with your image path
 img = image.load_img(img_path, color_mode="grayscale", target_size=(28, 28))
 img_array = image.img_to_array(img)
 img_array = img_array.reshape(1, 28, 28) / 255.0  # Normalize
