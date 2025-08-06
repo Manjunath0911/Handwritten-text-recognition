@@ -29,7 +29,7 @@ model.compile(optimizer='adam',
               metrics=['accuracy'])
 
 # Train
-model.fit(x_train, y_train, epochs=5, validation_split=0.1)
+model.fit(x_train, y_train, epochs=4, validation_split=0.1)
 
 # Evaluate
 loss, acc = model.evaluate(x_test, y_test)
